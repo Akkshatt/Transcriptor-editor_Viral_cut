@@ -1,0 +1,146 @@
+
+
+
+body{
+    background: rgb(153,0,255);
+background: radial-gradient(circle, rgba(153,0,255,1) 0%, rgba(60,30,65,1) 100%);
+}
+.transcript-editor {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    border-color: #3C1E46;
+    border-width: 10px;
+    max-width: 600px;
+    margin: 50px auto; 
+    text-align: center; 
+}
+
+
+.play-btn, .pause-btn {
+    background-color: #600e72; 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pause-btn {
+    background-color: #600e72; 
+}
+
+
+.play-btn:hover {
+    background-color:#572262; 
+}
+
+.pause-btn:hover {
+    background-color: #572262;
+}
+
+
+.transcript-container {
+    margin-top: 20px;
+    background-color: #2d2d2d;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center; }
+
+
+.transcript-word {
+    cursor: pointer;
+    padding: 2px 5px;
+    margin: 0 2px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+.transcript-word.highlighted {
+    background-color: #cd91d6;
+    color: #1e1e1e;
+}
+
+
+.transcript-word:hover {
+    background-color: #ecccf1;
+}
+
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-container {
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+}
+
+.modal-title {
+    color: #ffffff;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.modal-input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.continue-btn, .close-btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.continue-btn {
+    background-color: #600e72;
+    color: #ffffff;
+}
+
+.continue-btn:hover {
+    background-color: #572262;
+}
+
+.close-btn {
+    background-color: #600e72;
+    color: #ffffff;
+}
+
+.close-btn:hover {
+    background-color: #572262;
+}
